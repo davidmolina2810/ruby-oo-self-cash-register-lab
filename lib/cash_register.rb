@@ -30,7 +30,7 @@ class CashRegister
 
   def items 
     @items.each_with_object([]) do |item, arr| # iterate of AoH @items
-      if item[:quantity] && item[:quantity] > 0 
+      if item[:quantity]
         item[:quantity].times do 
           arr << item.keys[0] # append item to arr
         end
