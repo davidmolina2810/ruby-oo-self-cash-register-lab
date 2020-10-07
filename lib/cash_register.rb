@@ -42,7 +42,6 @@ class CashRegister
 
   def void_last_transaction
     item = @items.pop
-    binding.pry
     if @items.length > 0
       self.total -= item.values[0]
     else 
